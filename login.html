@@ -1,7 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lan="en" and dir="Itr">
   <head>
+    <meta charset="utf-8" />
     <link rel="stylesheet" href="style.css" />
+    <script src="login.js"></script>
     <title>Driver Login</title>
   </head>
   <body>
@@ -14,12 +16,15 @@
               <p>Please enter your credentials to login.</p>
             </div>
           </div>
-          <form class="login-form">
-            <input type="text" placeholder="username" />
-            <input type="password" placeholder="password" />
-            <a href="driver.html">
-              <button>login</button>
-            </a>
+          <form class="box" action="login.html" method="POST">
+            <input type="text" placeholder="username" id="username" />
+            <input type="password" placeholder="password" id="password" />
+            <input
+              type="submit"
+              name="Login"
+              value="Login"
+              onclick="validate()"
+            />
             <p class="message">
               Not registered? <a href="#">Create an account</a>
             </p>
@@ -29,3 +34,4 @@
     </body>
   </body>
 </html>
+
