@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:100,300,400");
+.main {
+  display: flex;
+  margin: 0;
+  justify-content: center;
+  padding: 20px;
+  flex-direction: row; }
+
+.timeClock {
+  padding: 20px;
+  background-color: #a9b4b4;
+  display: flex;
+  justify-content: center; }
+
+.employeeInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 15px; }
+
+.employeePicture {
+  width: 150px;
+  border-radius: 100px;
+  align-self: center; }
+
+.employeeName {
+  font-size: 32px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  text-align: center;
+  margin: 10px 0 0 0; }
+
+.employeeTitle {
+  text-align: center;
+  font-size: 24px;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  margin: -5px 0 10px 0; }
+
+.timeDisplay {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  background-color: #a9b4b4;
+  padding: 20px; }
+
+.currentTime {
+  text-align: center;
+  font-family: "Lato", sans-serif; }
+
+.centerBlock {
+  display: flex;
+  justify-content: center; }
+
+.timeContainer {
+  background-color: #fff;
+  height: 100px;
+  overflow: scroll; }
+
+.clockInTime, .clockOutTime {
+  font-size: 16px;
+  text-align: center;
+  list-style: none; }
+
+.listMain {
+  width: 300px; }
+
+#list3 {
+  text-align: center;
+  list-style: none; }
+
+ul {
+  margin: 0; }
