@@ -30,12 +30,12 @@ function timeStamp (event){
       document.getElementById("list2").appendChild(node);
     
     var node = document.createElement('li');
-      node.append("Total: " + diff);
+      node.append("Time Worked: " + diff);
       document.getElementById("list3").appendChild(node);
     
       document.getElementById('clockOut').id = 'clockIn';
 
-    
+      
   } else {
       localStorage.setItem(id, timeStamp);
       var node = document.createElement('li');
