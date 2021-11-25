@@ -1,3 +1,9 @@
 
 11/24/2021:
 Created common navbar, exec sidebar. 
+
+11/25/2021:
+Added functionality to sidebar with js. This is done through 3 js files: 
+    route.js: contains route constructor, as well as checking which route is currently active.
+    router.js: friend function to route.js. Takes array of routes as param, uses event listeners for proper routing.
+    app.js: starts router function, provides routes.
