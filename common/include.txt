@@ -1,0 +1,13 @@
+To include navbar on your page:
+Add this to the head tag:
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+And this at the very top of the body tag:
+<!--navbar-->
+<div id="nav-placeholder"></div>
+<script>
+$(function(){
+$("#nav-placeholder").load("common/nav.html");
+});
+</script>
+<!--end of navbar-->
