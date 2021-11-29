@@ -6,7 +6,8 @@
             new Route('deliveries', 'deliveries.php', true),            
             new Route('reports', 'reports.php'),
             new Route('payroll', 'payroll.php'),
-            new Route('account', 'account.php')
+            new Route('account', 'account.php'),
+            new Route('entry', 'entry.php')
         ]);
     }
     init();
