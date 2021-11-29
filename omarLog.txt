@@ -7,3 +7,6 @@ Added functionality to sidebar with js. This is done through 3 js files:
     route.js: contains route constructor, as well as checking which route is currently active.
     router.js: friend function to route.js. Takes array of routes as param, uses event listeners for proper routing.
     app.js: starts router function, provides routes.
+
+11/29/2021:
+Wrote SQL script to generate the relational database.

@@ -10,7 +10,10 @@
          <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2">
-                <h2>Delivery Database</h2>
+                <h2>Manage Deliveries</h2>
+                <form action="" method="POST">
+                    <input type="text" name="name
+                </form>
                 <table class="table table-bordered">
                     <thead>
                         <tr>
