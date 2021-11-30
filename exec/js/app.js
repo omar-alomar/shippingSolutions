@@ -7,7 +7,9 @@
             new Route('reports', 'reports.php'),
             new Route('payroll', 'payroll.php'),
             new Route('account', 'account.php'),
-            new Route('entry', 'entry.php')
+            new Route('orderEntry', 'orderEntry.php'),
+            new Route('clientEntry', 'clientEntry.php'),
+            new Route('clients', 'clients.php')
         ]);
     }
     init();

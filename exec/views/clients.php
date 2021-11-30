@@ -10,8 +10,8 @@
          <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2">
-                <h2>Manage Deliveries</h2>
-                <a href="#orderEntry" class="btn btn-dark" role="button">New order</a>
+                <h2>Manage Clients</h2>
+                <a href="#orderEntry" class="btn btn-dark" role="button">New client</a>
                 <table class="table table-bordered">
                     <thead>
                         <tr>
