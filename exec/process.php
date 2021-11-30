@@ -2,24 +2,15 @@
 
 use function PHPSTORM_META\map;
 
-$user = 'root';
-$password = 'root';
-$db = 'shippingSolutions';
-$host = 'localhost';
-$port = 88889;
-$link = mysqli_init();
-$success = mysqli_real_connect(
-   $link,
-   $host,
-   $user,
-   $password,
-   $db,
-   $port
-);
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
+$mysqli = new mysqli('localhost', 'root', 'root', 'shippingSolutions') or die(mysqli_error($mysqli));
 
 if (isset($_POST['save'])){
     $name = $_POST['name'];
-    //$address = $_POST['address'];
+    $address = $_POST['address'];
     //$status = $_POST['status'];
     //$date = $_POST['date'];
     //$driver = $_POST['driver'];

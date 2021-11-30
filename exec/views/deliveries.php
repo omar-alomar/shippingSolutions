@@ -11,7 +11,7 @@
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2">
                 <h2>Manage Deliveries</h2>
-                <a href="#entry" class="btn btn-dark" role="button" >New entry</a>
+                <a href="#entry" class="btn btn-dark" role="button">New entry</a>
                 <table class="table table-bordered">
                     <thead>
                         <tr>
