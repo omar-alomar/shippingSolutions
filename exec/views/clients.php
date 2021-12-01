@@ -11,16 +11,16 @@
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2">
                 <h2>Manage Clients</h2>
-                <a href="#orderEntry" class="btn btn-dark" role="button">New client</a>
+                <a href="#clientEntry" class="btn btn-dark" role="button">Add client</a>
                 <table class="table table-bordered">
                     <thead>
                         <tr>
                             <th scope="col">#</th>
-                            <th scope="col">Customer</th>
-                            <th scope="col">Delivery status</th>
-                            <th scope="col">Delivery date</th>
+                            <th scope="col">Name</th>
                             <th scope="col">Address</th>
-                            <th scope="col">Driver name</th>
+                            <th scope="col">Pending Orders</th>
+                            <th scope="col">Delivered Orders</th>
+                            <th scope="col">Modify/Delete</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -30,7 +30,6 @@
                             <td>Delivered</td>
                             <td>10/10/2021</td>
                             <td>1432 Arroyo Lane</td>
-                            <td>Mike Lawson</td>
                         </tr>
         
                         <tr>
@@ -39,12 +38,11 @@
                             <td>Pending</td>
                             <td>-</td>
                             <td>123 Campus Drive</td>
-                            <td>Mahmoud Zaatari</td>
                         </tr>
                     </tbody>
                 </table>   
                 </div>
             </div>
-           
+            
         </div>
     </body>
