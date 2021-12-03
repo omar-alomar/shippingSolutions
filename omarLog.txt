@@ -10,3 +10,12 @@ Added functionality to sidebar with js. This is done by a js SPA script:
 
 11/29/2021:
 Wrote SQL script to generate the relational database.
+
+11/30/2021
+Implemented form that allows insertion of clients into user db
+
+12/2/2021:
+Fixed "new client" page redirect bug
+Clients table can now interface with database. Reads entries and displays them.
+Added delete button (done)
+Added edit button (in progress)
