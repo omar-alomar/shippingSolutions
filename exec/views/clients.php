@@ -11,6 +11,10 @@
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2">
                 <h2>Manage Clients</h2>
+                <?php 
+                    $mysqli = new mysqli('localhost', 'root', 'root', 'shippingSolutions') or die(mysqli_error($mysqli));
+                    $result = $mysqli->query(" SELECT * FROM users WHERE type='client' ");                   
+                ?>
                 <a href="#clientEntry" class="btn btn-dark" role="button">Add client</a>
                 <table class="table table-bordered">
                     <thead>
@@ -21,26 +25,34 @@
                             <th scope="col">Pending Orders</th>
                             <th scope="col">Delivered Orders</th>
                             <th scope="col">Modify/Delete</th>
-                        </tr>
+                        </tr> 
                     </thead>
                     <tbody>
+                        <?php
+                            while ($row = $result->fetch_assoc()): ?>
                         <tr>
-                            <th scope="col">1</th>
-                            <td>Mark Scott</td>
-                            <td>Delivered</td>
-                            <td>10/10/2021</td>
-                            <td>1432 Arroyo Lane</td>
+                            <td><?php echo $row['id']; ?></td>
+                            <td><?php echo $row['name']; ?></td>
+                            <td><?php echo $row['address']; ?></td>
+                            <td><?php echo $row['pendingOrders']; ?></td>
+                            <td><?php echo $row['deliveredOrders']; ?></td>
+                            <td>
+                                <a href="#clientEntry?edit=<?php echo $row['id']; ?>" class="btn btn-secondary">
+                                Edit</a>
+                                <a href="clientProcess.php?delete=<?php echo $row['id']; ?>" class="btn btn-danger">
+                                Delete</a>
+                            </td>
                         </tr>
-        
-                        <tr>
-                            <th scope="col">2</th>
-                            <td>Bob Lewis</td>
-                            <td>Pending</td>
-                            <td>-</td>
-                            <td>123 Campus Drive</td>
-                        </tr>
+                        <?php endwhile; ?>
                     </tbody>
-                </table>   
+                </table>  
+                <?php
+                    function pre_r($array) {
+                        echo '<pre>';
+                        print_r($array);
+                        echo '</pre>';
+                    }
+                 ?> 
                 </div>
             </div>
             
