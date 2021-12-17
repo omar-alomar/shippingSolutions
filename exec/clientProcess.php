@@ -24,8 +24,7 @@ if (isset($_POST['save'])) {
     VALUES ('$name', '$address', '$username','$password', '$type')")
         or die($mysqli->error);
 
-    $_SESSION['message'] = "Client added successfully.";
-    $_SESSION['msg_type'] = "success";
+    $_SESSION['display'] = false;
     header("location: exec.php#clients");
 }
 
@@ -47,6 +46,10 @@ if (isset($_POST['update'])) {
     $username = $_POST['username'];
     $password = $_POST['password'];
     $mysqli->query("UPDATE  users SET name='$name', address='$address', username='$username', password='$password' WHERE id='" . $_SESSION['id'] . "'") or die(mysqli_error($mysqli));
+    $_SESSION['display'] = false;
+    header("location: exec.php#clients");
+}
+if (isset($_POST['cancel'])) {
     $_SESSION['display'] = false;
     header("location: exec.php#clients");
 }

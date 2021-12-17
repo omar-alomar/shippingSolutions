@@ -27,7 +27,7 @@
                             <th scope="col">Address</th>
                             <th scope="col">Pending Orders</th>
                             <th scope="col">Delivered Orders</th>
-                            <th scope="col">Modify/Delete</th>
+                            <th scope="col">Modify / Delete</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -40,12 +40,14 @@
                                 <td><?php echo $row['pendingOrders']; ?></td>
                                 <td><?php echo $row['deliveredOrders']; ?></td>
                                 <td>
-                                    <form action="clientProcess.php" method="get">
-                                        <input type="hidden" name="edit" value="<?php echo $row['id']; ?>">
-                                        <input type="submit" value="Edit" class="btn btn-secondary">
-                                    </form>
-                                    <a href="clientProcess.php?delete=<?php echo $row['id']; ?>" class="btn btn-danger">
-                                        Delete</a>
+                                    <div>
+                                        <form action="clientProcess.php" method="get">
+                                            <input type="hidden" name="edit" value="<?php echo $row['id']; ?>">
+                                            <input type="submit" value="Edit" class="btn btn-secondary">
+                                        </form>
+                                        <a href="clientProcess.php?delete=<?php echo $row['id']; ?>" class="btn btn-danger">
+                                            Delete</a>
+                                    </div>
                                 </td>
                             </tr>
                         <?php endwhile; ?>
@@ -86,6 +88,7 @@
                         </div>
                         <div class="mb-3">
                             <button type="submit" class="btn btn-dark" name="update">Update</button>
+                            <button type="submit" class="btn btn-secondary" name="cancel">Cancel</button>
                         </div>
                 </div>
             <?php endif ?>
