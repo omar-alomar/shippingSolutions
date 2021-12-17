@@ -10,6 +10,8 @@ CREATE TABLE users (
     address VARCHAR(255),
     pendingOrders INT,
     deliveredOrders INT,
+    hoursWorked INT,
+    hourlyWage INT,
     
     PRIMARY KEY (id),
     CONSTRAINT chkType CHECK (type IN ('driver', 'client', 'exec'))

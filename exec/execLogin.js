@@ -4,7 +4,7 @@ function validate() {
   
   if (username == "Sudeep" && password == "Driver123") {
     alert("Login successfully");
-    window.location = "exec.html";
+    window.location = "exec.php";
     return false;
   } else {
     alert("login failed");
