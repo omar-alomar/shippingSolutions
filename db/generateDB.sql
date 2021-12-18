@@ -30,6 +30,8 @@ CREATE TABLE orders (
     CONSTRAINT chkStatus CHECK (status IN ('Delivered', 'Pending'))
 );
 
+    
+
 -- Adding some example users
 INSERT INTO users (
     name,
