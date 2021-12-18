@@ -1,5 +1,5 @@
 table {
-    width: 2000px;
+    width: 1800px;
   }
   th,
   caption {
@@ -20,9 +20,11 @@ table {
   
   tr:nth-child(even) {
     background-color: #fff;
+      text-align: center;
   }
   tr:nth-child(odd) {
     background-color: #ddd;
+      text-align: center;
   }
   h1 {
     text-align: center;
