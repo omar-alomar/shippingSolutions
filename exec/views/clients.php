@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
                 <h2>Manage Clients</h2>
@@ -27,7 +27,7 @@
                             <th scope="col">Address</th>
                             <th scope="col">Pending Orders</th>
                             <th scope="col">Delivered Orders</th>
-                            <th scope="col">Modify / Delete</th>
+                            <th scope="col">Actions</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -40,7 +40,7 @@
                                 <td><?php echo $row['pendingOrders']; ?></td>
                                 <td><?php echo $row['deliveredOrders']; ?></td>
                                 <td>
-                                    <div>
+                                    <div class="btn-group">
                                         <form action="clientProcess.php" method="get">
                                             <input type="hidden" name="edit" value="<?php echo $row['id']; ?>">
                                             <input type="submit" value="Edit" class="btn btn-secondary">
