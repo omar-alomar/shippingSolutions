@@ -11,12 +11,23 @@ $result = mysqli_query($mysqli, "SELECT* from request ORDER by name DESC");
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <title>
+    <link rel="styleSheet" href="sidebar.css">
 
-    </title>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="sidebar.js"></script>
+
+
+    <title>Shipping Service Solutions</title>
 </head>
 
 <body>
+    <div id="nav-placeholder"></div>
+    <script>
+        $(function() {
+            $("#nav-placeholder").load("../common/nav.html");
+        });
+    </script>
+
     <form action="function.php" method="POST">
         Comppany Name<input type="text" name="name"><br>
         Address <input type="text" name="address"><br>
@@ -47,7 +58,7 @@ $result = mysqli_query($mysqli, "SELECT* from request ORDER by name DESC");
             echo '<td>' . $res['dDate'] . '</td>';
             echo '<td>' . $res['LoadType'] . '</td>';
             echo '<td>' . $res['LoadsNum'] . '</td>';
-            echo '</tr>';
+            echo '/tr>';
         }
         ?>
     </table>

@@ -11,7 +11,7 @@
         mysqli_query($mysqli, $result);
 
         if ($result) {
-            header("location:OrderRequest.php");
+            header("location:COrderRequest.php");
         }
     }
     ?>
