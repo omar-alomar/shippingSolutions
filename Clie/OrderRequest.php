@@ -51,6 +51,7 @@ $result = mysqli_query($mysqli, "SELECT* from request ORDER by name DESC");
             <th>Load Type</th>
             <th>Number of Loads</th>
         </tr>
+
         <?php
 
         while ($res = mysqli_fetch_array($result)) {
