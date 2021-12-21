@@ -31,7 +31,7 @@ $result = mysqli_query($mysqli, "SELECT* from request ORDER by name DESC");
     <h1>Client</h1>
 
     <form action="function.php" method="POST">
-        Comppany Name<input type="text" name="name"><br>
+        Company Name<input type="text" name="name"><br>
         Address <input type="text" name="address"><br>
         Delivery Date<input type="date" name="dDate"><br>
         Load Type <select name="LoadType">
