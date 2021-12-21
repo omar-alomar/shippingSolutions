@@ -27,6 +27,8 @@ $result = mysqli_query($mysqli, "SELECT* from request ORDER by name DESC");
             $("#nav-placeholder").load("../common/nav.html");
         });
     </script>
+    <h1>Shipping Solutions</h1>
+    <h1>Client</h1>
 
     <form action="function.php" method="POST">
         Comppany Name<input type="text" name="name"><br>

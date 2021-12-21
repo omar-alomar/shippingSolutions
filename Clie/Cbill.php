@@ -27,6 +27,8 @@ include("config.php");
       $("#nav-placeholder").load("../common/nav.html");
     });
   </script>
+  <h1>Shipping Solutions</h1>
+  <h1>Client</h1>
   <caption>My Bills</caption>
   <table width="60%" border="2">
 
