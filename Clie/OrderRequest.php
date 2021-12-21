@@ -1,5 +1,6 @@
 <?php
 include("config.php");
+$result = mysqli_query($mysqli, "SELECT* from request ORDER by name DESC");
 ?>
 
 <!DOCTYPE html>
@@ -16,7 +17,7 @@ include("config.php");
 </head>
 
 <body>
-    <form action="" method="POST">
+    <form action="function.php" method="POST">
         Comppany Name<input type="text" name="name"><br>
         Address <input type="text" name="address"><br>
         Delivery Date<input type="date" name="dDate"><br>
@@ -27,23 +28,29 @@ include("config.php");
         Number of Loads <input type="number" name="LoadsNum"><br>
         <input type="submit" name="submit">
     </form>
-    <?php
-    if (isset($_POST['submit'])) {
-        $name = $_POST['name'];
-        $address = $_POST['address'];
-        $dDate = $_POST['dDate'];
-        $LoadType = $_POST['LoadType'];
-        $LoadsNum = $_POST['LoadsNum'];
 
-        $result = "INSERT into request (name,address,dDate,LoadType,LoadsNum) values('$name','$address','$dDate','$LoadType','$LoadsNum')";
-        mysqli_query($mysqli, $result);
-        if ($result) {
-            echo "Success";
-        } else {
-            echo "Failed";
+
+    <table width="60%" border="2">
+        <tr>
+            <th>Customer Name</th>
+            <th>Address</th>
+            <th>Date</th>
+            <th>Load Type</th>
+            <th>Number of Loads</th>
+        </tr>
+        <?php
+
+        while ($res = mysqli_fetch_array($result)) {
+            echo '<tr>';
+            echo '<td>' . $res['name'] . '</td>';
+            echo '<td>' . $res['address'] . '</td>';
+            echo '<td>' . $res['dDate'] . '</td>';
+            echo '<td>' . $res['LoadType'] . '</td>';
+            echo '<td>' . $res['LoadsNum'] . '</td>';
+            echo '</tr>';
         }
-    }
-    ?>
+        ?>
+    </table>
 </body>
 
 </html>
