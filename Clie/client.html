@@ -10,12 +10,20 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <link rel="styleSheet" href="css/styles.css" />
-    <script src="js/script.js"></script>
+    <link rel="styleSheet" href="sidebar.css" />
 
-    <title>Client Menu</title>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="sidebar.js"></script>
+
+    <title>Shipping Service Solutions</title>
   </head>
   <body style="background-color: rgb(229, 238, 229)">
+    <div id="nav-placeholder"></div>
+    <script>
+      $(function () {
+        $("#nav-placeholder").load("../common/nav.html");
+      });
+    </script>
     <div class="container">
       <div class="row">
         <div class="col"></div>
