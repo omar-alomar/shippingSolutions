@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+<table style="height: 17px;" width="728">
+  <tbody>
+  <tr style="height: 17px;">
+  <td style="height: 17px; width: 100.438px;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Employee Work History</td>
+  </tr>
+  </tbody>
+  </table>
+  <table style="height: 17px;" width="728">
+  <tbody>
+  <tr style="height: 17px;">
+  <td style="height: 17px; width: 100.438px;">Name</td>
+  <td style="height: 17px; width: 83.3594px;">ID</td>
+  <td style="height: 17px; width: 95.4062px;">Date</td>
+  <td style="height: 17px; width: 103.453px;">Hourly Rate</td>
+  <td style="height: 17px; width: 98.4219px;">Clock In Time</td>
+  <td style="height: 17px; width: 110.469px;">Clock Out Time</td>
+  <td style="height: 17px; width: 90.4531px;">Daily Pay</td>
+  </tr>
+  <tr>
+  <td>John Smith</td>
+  <td>12345</td>
+  <td>5/21/21</td>
+  <td>$15.00</td>
+  <td>9:05</td>
+  <td>4:59</td>
+  <td>$96.00</td>
+
+  </tr>
+ 
+  <tr>
+    <td>John Smith</td>
+    <td>12345</td>
+    <td>5/22/21</td>
+    <td>$15.00</td>
+    <td>9:07</td>
+    <td>5:05</td>
+    <td>$96.00</td>
+  
+    </tr>
+
+    <tr>
+      <td>John Smith</td>
+      <td>12345</td>
+      <td>5/23/21</td>
+      <td>$15.00</td>
+      <td>9:10</td>
+      <td>5:15</td>
+      <td>$96.00</td>
+    
+      </tr>
+      <tr>
+        <td>John Smith</td>
+        <td>12345</td>
+        <td>5/24/21</td>
+        <td>$15.00</td>
+        <td>9:07</td>
+        <td>5:00</td>
+        <td>$96.00</td>
+      
+        </tr>
+
+     
+        <tr>
+          <td>John Smith</td>
+          <td>12345</td>
+          <td>5/25/21</td>
+          <td>$15.00</td>
+          <td>9:01</td>
+          <td>4:59</td>
+          <td>$96.00</td>
+        
+          </tr>
+
+          <tr>
+            <td>John Smith</td>
+            <td>12345</td>
+            <td>5/26/21</td>
+            <td>$15.00</td>
+            <td>9:00</td>
+            <td>5:01</td>
+            <td>$96.00</td>
+          
+            </tr>
+   
+          <tr>
+            <td>John Smith</td>
+            <td>12345</td>
+            <td>5/27/21</td>
+            <td>$15.00</td>
+            <td>9:05</td>
+            <td>4:59</td>
+            <td>$96.00</td>
+          
+            </tr>
+  
+          </tbody>
+        </table>
+        <table style="height: 17px;" width="728">
+        <tbody>
+        <tr style="height: 17px;">
+        <td style="height: 17px; width: 100.438px;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Weekly Pay</td>
+        <td style="height: 17px; width: 83.3594px;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Monthly Pay</td>
+        <td style="height: 17px; width: 95.4062px;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Yearly Pay</td>
+        </tr>
+        </tbody>
+        </table>
+        <table style="height: 17px;" width="728">
+        <tbody>
+        <tr style="height: 17px;">
+        
+          <td>$672.00</td>
+          <td>$2,688.00</td>
+          <td>$32,256.00</td>
+
+        </tr>
+        </tbody>
+        </table>
+
+      </body>
+      </html>
+
+
